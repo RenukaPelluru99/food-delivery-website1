@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FoodExpress</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+<h2>FoodExpress</h2>
+</div>
+
+<nav class="nav-links">
+<a href="#">Home</a>
+<a href="#menu">Menu</a>
+<a href="#cart">Cart</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="nav-buttons">
+<button class="app-btn">Get App</button>
+<button class="login-btn">Sign In</button>
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Order Food Anytime, Anywhere</h1>
+
+<p>Discover the best restaurants and delicious meals near you.</p>
+
+<div class="search-box">
+<input type="text" placeholder="Search for food or restaurants...">
+<button>Search</button>
+</div>
+
+<a href="#menu" class="order-btn">Order Now</a>
+
+</div>
+
+</section>
+
+<section id="menu" class="menu">
+
+<h2>Our Menu</h2>
+
+<div class="food-container">
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&auto=format&fit=crop&q=60"
+alt="Pizza"
+loading="lazy">
+<h3>Pizza</h3>
+<p>₹200</p>
+<button onclick="addToCart('Pizza',200)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Burger">
+<h3>Burger</h3>
+<p>₹120</p>
+<button onclick="addToCart('Burger',120)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a" alt="Hyderabadi Biryani">
+<h3>Hyderabadi Biryani</h3>
+<p>₹240</p>
+<button onclick="addToCart('Hyderabadi Biryani',240)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1550317138-10000687a72b" alt="Sandwich">
+<h3>Sandwich</h3>
+<p>₹100</p>
+<button onclick="addToCart('Sandwich',100)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b" alt="Fried Rice">
+<h3>Fried Rice</h3>
+<p>₹150</p>
+<button onclick="addToCart('Fried Rice',150)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1585032226651-759b368d7246" alt="Noodles">
+<h3>Noodles</h3>
+<p>₹140</p>
+<button onclick="addToCart('Noodles',140)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d" alt="Chicken Biryani">
+<h3>Chicken tikka</h3>
+<p>₹220</p>
+<button onclick="addToCart('Chicken Biryani',220)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb" alt="Ice Cream">
+<h3>Ice Cream</h3>
+<p>₹90</p>
+<button onclick="addToCart('Ice Cream',90)">Add to Cart</button>
+</div>
+
+</div>
+
+</section>
+
+</div>
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-container">
+
+<div class="contact-info">
+<p><strong>Email:</strong> support@foodexpress.com</p>
+<p><strong>Phone:</strong> +91 9876543210</p>
+<p><strong>Location:</strong> Hyderabad, India</p>
+</div>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="cart" class="cart">
+
+<h2>Your Cart</h2>
+
+<ul id="cart-items"></ul>
+
+<p>Total: ₹<span id="total">0</span></p>
+
+<button onclick="placeOrder()">Place Order</button>
+
+</section>
+
+<script src="script.js"></script>
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-section">
+<h3>FoodExpress</h3>
+<p>Delicious food delivered to your doorstep. Order your favorite meals anytime.</p>
+</div>
+
+<div class="footer-section">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#cart">Cart</a></li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h3>Contact</h3>
+<p>Email: support@foodexpress.com</p>
+<p>Phone: +91 9876543210</p>
+<p>Location: Hyderabad</p>
+</div>
+
+</div>
+
+<p class="footer-bottom">© 2026 FoodExpress. All Rights Reserved.</p>
+
+</footer>
+</body>
+</html>
